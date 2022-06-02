@@ -1,12 +1,6 @@
-@REM To Copy Contents to Program Files directory 
-
 SET mypath=%~dp0
 echo %mypath:~0,-1%
 xcopy %mypath% "C:\Program Files\zsh" /y /E /s
-
-
-
-@REM To Set ZSH as and Environment Variable 
 
 SET HOMEDRIVE = C:
 :: Assign  Path variables
@@ -24,7 +18,6 @@ SET COMPOSER=;%HOMEDRIVE%\ProgramData\ComposerSetup\bin
 SET GIT=;%HOMEDRIVE%\Program Files\Git\cmd
 SET ZSH=;%HOMEDRIVE%\Program Files\zsh\usr\bin
 
-:: Set Path variable
 setx PATH "%PATH%%PHP%%SYSTEM32%%NODEJS%%COMPOSER%%YII%%GIT%%ZSH%" /m
 
 pause
