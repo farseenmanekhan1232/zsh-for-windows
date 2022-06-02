@@ -25,6 +25,6 @@ SET GIT=;%HOMEDRIVE%\Program Files\Git\cmd
 SET ZSH=;%HOMEDRIVE%\Program Files\zsh\usr\bin
 
 :: Set Path variable
-setx PATH "%PHP%%SYSTEM32%%NODEJS%%COMPOSER%%YII%%GIT%%ZSH%" /m
+setx PATH "%PATH%%PHP%%SYSTEM32%%NODEJS%%COMPOSER%%YII%%GIT%%ZSH%" /m
 
 pause
